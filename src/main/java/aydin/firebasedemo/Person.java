@@ -4,9 +4,12 @@ public class Person {
     private String name;
     private int age;
 
-    public Person(String name, int age) {
+    private String phoneNum;
+
+    public Person(String name, int age, String pNum) {
         this.name = name;
         this.age = age;
+        this.phoneNum = pNum;
     }
 
     public String getName() {
@@ -24,6 +27,14 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getPhoneNum(){
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String pNum){
+        this.phoneNum = pNum;
     }
 
 }
